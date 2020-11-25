@@ -8,7 +8,7 @@ const authRoutes = require("./routes/auth");
 
 const app = express()
 
-mongoose.connect('mongodb+srv://yral:ROMNEtaubFFMYK1U@cluster0.wv8o2.mongodb.net/meansample?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://<username>:<password>@cluster0.wv8o2.mongodb.net/meansample?retryWrites=true&w=majority')
     .then(() => {
         console.log('Connected to db');
     }).catch(() => {
